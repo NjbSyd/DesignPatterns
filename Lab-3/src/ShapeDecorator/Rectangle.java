@@ -1,4 +1,4 @@
-package Decorator;
+package ShapeDecorator;
 public class Rectangle implements Shape {
 int rectanglePrice= 20;
     @Override

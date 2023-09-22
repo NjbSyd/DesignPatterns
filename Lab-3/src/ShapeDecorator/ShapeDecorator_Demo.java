@@ -1,5 +1,5 @@
-package Decorator;
-public class DecoratorPatternDemo {
+package ShapeDecorator;
+public class ShapeDecorator_Demo {
     public static void main(String[] args) {
 
         Shape circle = new Circle();

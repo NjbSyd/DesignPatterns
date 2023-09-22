@@ -1,4 +1,4 @@
-package Decorator;
+package ShapeDecorator;
 public abstract class ShapeDecorator implements Shape {
     protected Shape decoratedShape;
 

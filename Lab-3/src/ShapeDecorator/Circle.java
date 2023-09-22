@@ -1,4 +1,4 @@
-package Decorator;
+package ShapeDecorator;
 
 public class Circle implements Shape {
     int circlePrice= 10;
