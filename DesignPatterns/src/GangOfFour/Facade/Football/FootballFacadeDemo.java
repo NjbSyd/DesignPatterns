@@ -1,6 +1,6 @@
-package GangOfFour.Facade;
+package GangOfFour.Facade.Football;
 
-public class Main {
+public class FootballFacadeDemo {
     public static void main(String[] args) {
         FootballFacade footballFacade = new FootballFacade();
 

@@ -1,4 +1,4 @@
-package GangOfFour.Facade;
+package GangOfFour.Facade.Football;
 
 import java.util.HashMap;
 import java.util.Map;

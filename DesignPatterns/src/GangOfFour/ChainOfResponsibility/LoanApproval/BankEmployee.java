@@ -1,4 +1,4 @@
-package ChainOfResponsibility_LoanApproval;
+package GangOfFour.ChainOfResponsibility.LoanApproval;
 
 public class BankEmployee extends BaseApprover {
     private final String title;

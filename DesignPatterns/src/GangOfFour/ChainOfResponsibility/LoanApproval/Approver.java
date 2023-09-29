@@ -1,4 +1,4 @@
-package ChainOfResponsibility_LoanApproval;
+package GangOfFour.ChainOfResponsibility.LoanApproval;
 
 public interface Approver {
     void setNext(Approver next);

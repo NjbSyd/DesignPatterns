@@ -1,4 +1,4 @@
-package ChainOfResponsibility_LoanApproval;
+package GangOfFour.ChainOfResponsibility.LoanApproval;
 
 public abstract class BaseApprover implements Approver {
     protected Approver next = null;

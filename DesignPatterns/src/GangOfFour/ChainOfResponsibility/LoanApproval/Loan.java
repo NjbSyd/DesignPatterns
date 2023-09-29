@@ -1,4 +1,4 @@
-package ChainOfResponsibility_LoanApproval;
+package GangOfFour.ChainOfResponsibility.LoanApproval;
 
 public class Loan {
     private final String serialNumber;

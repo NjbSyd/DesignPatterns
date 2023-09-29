@@ -1,4 +1,4 @@
-package GangOfFour.Facade;
+package GangOfFour.Facade.Football;
 
 // Facade
 public class FootballFacade {

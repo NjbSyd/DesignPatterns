@@ -1,4 +1,4 @@
-package GangOfFour.Facade;
+package GangOfFour.Facade.Football;
 
 public class MatchScheduler {
     private final String[] fakeMatchSchedules = {

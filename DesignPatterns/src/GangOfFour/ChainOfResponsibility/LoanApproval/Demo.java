@@ -1,11 +1,11 @@
-package ChainOfResponsibility_LoanApproval;
+package GangOfFour.ChainOfResponsibility.LoanApproval;
 
 public class Demo {
 
     public static void main(String[] args) {
         BankEmployee clerk = new BankEmployee("Clerk", 10000);
         BankEmployee assistantManager = new BankEmployee("Assistant Manager", 25000);
-        BankEmployee manager = new BankEmployee("Manager", 100000);
+        BankEmployee manager = new BankEmployee("Manager", 300000);
 
         clerk.setNext(assistantManager);
         assistantManager.setNext(manager);
