@@ -2,24 +2,19 @@ package GangOfFour.Mediator.ChatsApp;
 
 public class MediatorPatternDemo {
     public static void main(String[] args) {
-        AbstractUser user1 = new User("Robert");
-        AbstractUser user2 = new User("John");
-        AbstractUser user3 = new User("David");
+        AbstractUser mAliUser = new User("M Ali");
+        AbstractUser comsatsUniversity = new University("COMSATS University");
+        AbstractUser nustUniversity = new University("NUST University");
+        AbstractUser aliTeacher = new Teacher("Sir Ali");
+        AbstractUser ahmadUser = new User("Ahmad");
+        AbstractUser zainUser = new User("Zain");
 
-        AbstractUser university1 = new University("COMSATS");
-        AbstractUser university2 = new University("NUST");
-        AbstractUser university3 = new University("FAST");
+        //Task#1:
+        mAliUser.sendMessage("Ali Says Hi to COMSATS University", comsatsUniversity);
 
-        AbstractUser teacher1 = new Teacher("Dr. Ali");
-        AbstractUser teacher2 = new Teacher("Dr. Ahmad");
-        AbstractUser teacher3 = new Teacher("Dr. Aslam");
+        //Task#2:
+        mAliUser.sendMessage("Ali Says Hi to many at the same time", comsatsUniversity,nustUniversity,aliTeacher,ahmadUser,zainUser);
 
-        user1.sendMessage("Hi All Universities", university1, university2, university3);
-        user2.sendMessage("Hi Sir Ali", teacher1);
-        user3.sendMessage("Hi Sir Ahmad & Sir Aslam", teacher2, teacher3);
 
-        university1.sendMessage("Hi Students", user1, user2, user3);
-        university2.sendMessage("Hi COMSATS & Dr Ali", university1, teacher1);
-        university3.sendMessage("Hi Fast & Dr Ahmad & Dr Aslam", university3, teacher2, teacher3);
     }
 }
