@@ -1,6 +1,7 @@
 package GangOfFour.AbstractFactory.ShapesExample;
 
-import GangOfFour.AbstractFactory.ShapesExample.Factories.*;
+import GangOfFour.AbstractFactory.ShapesExample.Factories.AbstractFactory;
+import GangOfFour.AbstractFactory.ShapesExample.Factories.FactoryProducer;
 import GangOfFour.AbstractFactory.ShapesExample.Shapes.Shape;
 
 public class AbstractFactoryPatternDemo {
@@ -12,12 +13,17 @@ public class AbstractFactoryPatternDemo {
         Shape shape2 = shapeFactory.getShape("SQUARE");
         shape2.draw();
 
+        Shape triangle = shapeFactory.getShape("TRIANGLE");
+        triangle.draw();
+
         //Rounded Shape Factory
         AbstractFactory shapeFactory1 = FactoryProducer.getFactory(true);
         Shape shape3 = shapeFactory1.getShape("RECTANGLE");
         shape3.draw();
         Shape shape4 = shapeFactory1.getShape("SQUARE");
         shape4.draw();
+        Shape roundedTriangle = shapeFactory.getShape("TRIANGLE");
+        triangle.draw();
 
     }
 }
