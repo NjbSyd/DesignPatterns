@@ -2,28 +2,41 @@ package GangOfFour.AbstractFactory.ShapesExample;
 
 import GangOfFour.AbstractFactory.ShapesExample.Factories.AbstractFactory;
 import GangOfFour.AbstractFactory.ShapesExample.Factories.FactoryProducer;
+import GangOfFour.AbstractFactory.ShapesExample.Factories.TYPES;
 import GangOfFour.AbstractFactory.ShapesExample.Shapes.Shape;
+
+import javax.swing.*;
 
 public class AbstractFactoryPatternDemo {
     public static void main(String[] args) {
         //Normal Shape Factory
-        AbstractFactory shapeFactory = FactoryProducer.getFactory(false);
-        Shape shape1 = shapeFactory.getShape("RECTANGLE");
-        shape1.draw();
-        Shape shape2 = shapeFactory.getShape("SQUARE");
-        shape2.draw();
-
-        Shape triangle = shapeFactory.getShape("TRIANGLE");
+        AbstractFactory normalShapeFactory = FactoryProducer.getFactory(TYPES.NORMAL);
+        assert normalShapeFactory!=null;
+        Shape rectangle = normalShapeFactory.getShape("RECTANGLE");
+        rectangle.draw();
+        Shape square = normalShapeFactory.getShape("SQUARE");
+        square.draw();
+        Shape triangle = normalShapeFactory.getShape("TRIANGLE");
         triangle.draw();
 
         //Rounded Shape Factory
-        AbstractFactory shapeFactory1 = FactoryProducer.getFactory(true);
-        Shape shape3 = shapeFactory1.getShape("RECTANGLE");
-        shape3.draw();
-        Shape shape4 = shapeFactory1.getShape("SQUARE");
-        shape4.draw();
-        Shape roundedTriangle = shapeFactory.getShape("TRIANGLE");
-        triangle.draw();
+        AbstractFactory roundedShapeFactory = FactoryProducer.getFactory(TYPES.ROUNDED);
+        assert roundedShapeFactory != null;
+        Shape rRectangle = roundedShapeFactory.getShape("RECTANGLE");
+        rRectangle.draw();
+        Shape rSquare = roundedShapeFactory.getShape("SQUARE");
+        rSquare.draw();
+        Shape rTriangle = roundedShapeFactory.getShape("TRIANGLE");
+        rTriangle.draw();
 
+        // Double Bordered Shape Factory
+        AbstractFactory doubleBorderFactory=FactoryProducer.getFactory(TYPES.DOUBLED);
+        assert doubleBorderFactory!=null;
+        Shape dRectangle=doubleBorderFactory.getShape("RECTANGLE");
+        dRectangle.draw();
+        Shape dSquare=doubleBorderFactory.getShape("SQUARE");
+        dSquare.draw();
+        Shape dTriangle=doubleBorderFactory.getShape("TRIANGLE");
+        dTriangle.draw();
     }
 }
