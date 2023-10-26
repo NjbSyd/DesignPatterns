@@ -1,4 +1,5 @@
-package ShapeDecorator;
+package GangOfFour.Decorator.ShapeDecorator;
+
 public class ShapeDecorator_Demo {
     public static void main(String[] args) {
 

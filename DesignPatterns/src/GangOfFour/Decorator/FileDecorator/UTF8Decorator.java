@@ -1,4 +1,4 @@
-package FileDecorator;
+package GangOfFour.Decorator.FileDecorator;
 
 import java.nio.charset.StandardCharsets;
 

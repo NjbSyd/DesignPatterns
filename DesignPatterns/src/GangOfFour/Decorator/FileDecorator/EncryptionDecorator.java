@@ -1,4 +1,4 @@
-package FileDecorator;
+package GangOfFour.Decorator.FileDecorator;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;

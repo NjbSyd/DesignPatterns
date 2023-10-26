@@ -1,4 +1,4 @@
-package ShapeDecorator;
+package GangOfFour.Decorator.ShapeDecorator;
 
 public class RedShapeDecorator extends ShapeDecorator {
 

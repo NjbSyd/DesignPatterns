@@ -1,4 +1,4 @@
-package FileDecorator;
+package GangOfFour.Decorator.FileDecorator;
 
 public abstract class DataSourceDecorator implements DataSource {
     protected DataSource wrapper;

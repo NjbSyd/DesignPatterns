@@ -1,4 +1,4 @@
-package FileDecorator;
+package GangOfFour.Decorator.FileDecorator;
 
 public interface DataSource {
     void writeData(String data);

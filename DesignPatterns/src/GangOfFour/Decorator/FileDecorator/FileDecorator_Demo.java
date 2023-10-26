@@ -1,4 +1,4 @@
-package FileDecorator;
+package GangOfFour.Decorator.FileDecorator;
 
 public class FileDecorator_Demo {
     public static void main(String[] args) {

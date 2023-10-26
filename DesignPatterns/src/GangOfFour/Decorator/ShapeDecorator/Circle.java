@@ -1,7 +1,8 @@
-package ShapeDecorator;
+package GangOfFour.Decorator.ShapeDecorator;
 
 public class Circle implements Shape {
-    int circlePrice= 10;
+    int circlePrice = 10;
+
     @Override
     public void draw() {
         System.out.println("Shape: Circle");

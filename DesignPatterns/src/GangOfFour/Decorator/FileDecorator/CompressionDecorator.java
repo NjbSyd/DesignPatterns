@@ -1,31 +1,4 @@
-//package FileDecorator;
-//
-//public class CompressionDecorator extends DataSourceDecorator {
-//    public CompressionDecorator(DataSource source) {
-//        super(source);
-//    }
-//
-//    @Override
-//    public void writeData(String data) {
-//        // Simulated compression process
-//        String compressedData = "Compressed(" + data + ")";
-//        super.writeData(compressedData);
-//    }
-//
-//    @Override
-//    public String readData() {
-//        String compressedData = super.readData();
-//        // Simulated decompression process
-//        return compressedData.substring(11, compressedData.length() - 1);
-//    }
-//
-//    @Override
-//    public String readOriginalData() {
-//        return super.readOriginalData();
-//    }
-//}
-
-package FileDecorator;
+package GangOfFour.Decorator.FileDecorator;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
