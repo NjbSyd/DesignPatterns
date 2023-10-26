@@ -21,4 +21,9 @@ public class ComputerPartDisplayVisitor implements ComputerPartVisitor {
     public void visit(Monitor monitor) {
         System.out.println("Displaying Monitor.");
     }
+
+    @Override
+    public void visit(Multimedia multimedia) {
+        System.out.println("Displaying Multimedia.");
+    }
 }

@@ -1,7 +1,6 @@
 package GangOfFour.Visitor.Computer;
 
-public class Keyboard implements ComputerPart {
-
+public class Multimedia implements ComputerPart{
     @Override
     public void accept(ComputerPartVisitor computerPartVisitor) {
         computerPartVisitor.visit(this);
