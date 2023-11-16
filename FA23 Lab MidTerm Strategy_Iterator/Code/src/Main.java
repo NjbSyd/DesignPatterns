@@ -1,34 +1,33 @@
 import Data.PC;
+import Data.RandomDataGenerator;
 import Data.Student;
-import Iterator.ComputersIterator;
-import Iterator.Iterator;
-import Iterator.StudentsIterator;
+import Strategy.LinuxAllocation;
+import Strategy.StrategyContext;
+import Strategy.WindowsAllocation;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Student[] students = new Student[]{
-                new Student(1, "Najeeb", "Software", "7th"),
-                new Student(2, "Mahmoud", "Software", "7th"),
-                new Student(3, "Mohamed", "Software", "7th"),
-        };
+        Student[] students = RandomDataGenerator.generateStudents(10);
+        Map<Integer, PC> pcs = RandomDataGenerator.generatePCs(10);
+        StrategyContext context = new StrategyContext();
+        context.setStrategy(new LinuxAllocation());
+        context.executeStrategy(students, pcs);
 
-        Iterator stdIterator = new StudentsIterator(students);
-        while (stdIterator.hasNext("Najeeb")) {
-            System.out.println(stdIterator.next("Najeeb"));
+        System.out.println("Linux Allocation:");
+        for (String s : context.getAllocation()) {
+            System.out.println(s);
         }
 
-        Map<Integer, PC> computers = new HashMap<>();
-        computers.put(1, new PC("Linux", new String[]{"Paint", "VS Code"}));
-        computers.put(2, new PC("Windows", new String[]{"Paint", "VS Code"}));
-        computers.put(3, new PC("Linux", new String[]{"Paint", "VS Code"}));
 
-        Iterator compIterator = new ComputersIterator(computers);
+        context.setStrategy(new WindowsAllocation());
+        context.executeStrategy(students, pcs);
 
-        while (compIterator.hasNext("Windows")) {
-            System.out.println(compIterator.next("Windows"));
+
+        System.out.println("Windows Allocation:");
+        for (String s : context.getAllocation()) {
+            System.out.println(s);
         }
     }
 }
