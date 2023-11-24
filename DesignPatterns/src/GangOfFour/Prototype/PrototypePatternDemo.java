@@ -9,8 +9,6 @@ public class PrototypePatternDemo {
 
         Shape clonedFish2 = ShapeCache.getShape("4");
         System.out.println("GangOfFour.Prototype.Shape : " + clonedFish2.getType());
-
-        // Compare two cloned GangOfFour.Prototype.Fish
         if (clonedFish1.equals(clonedFish2)) {
             System.out.println("Two cloned GangOfFour.Prototype.Fish are equal! Here is the fish image:");
             printFishImage();

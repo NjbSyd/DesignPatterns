@@ -1,18 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package GangOfFour.Proxy.Proxy;
+package GangOfFour.Proxy.VirtualProxy;
 
-/**
- *
- * @author hp
- */
 public abstract class ProxyImage implements Image {
    private RealImage realImage;
    private String fileName;
    private String code;
-   private int fileSize; // Example additional detail
+   private int fileSize;
 
    public ProxyImage(String fileName, String code, int fileSize) {
       this.fileName = fileName;

@@ -1,4 +1,4 @@
-package GangOfFour.Proxy.Proxy;
+package GangOfFour.Proxy.VirtualProxy;
 
 public class RealImage implements Image {
    private String fileName;
