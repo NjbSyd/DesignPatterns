@@ -1,4 +1,4 @@
-package ObserverPattern_EventManagement.listeners;
+package GangOfFour.Observer.EventManagement.listeners;
 
 public class SmsSupportListener implements EventListener<String> {
     private String phoneNumber;

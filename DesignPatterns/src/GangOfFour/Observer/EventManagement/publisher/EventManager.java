@@ -1,9 +1,7 @@
-package ObserverPattern_EventManagement.publisher;
-
-import java.io.File;
+package GangOfFour.Observer.EventManagement.publisher;
 import java.util.*;
 
-import ObserverPattern_EventManagement.listeners.EventListener;
+import GangOfFour.Observer.EventManagement.listeners.EventListener;
 
 public class EventManager {
     Map<String, List<EventListener>> listeners = new HashMap<>();

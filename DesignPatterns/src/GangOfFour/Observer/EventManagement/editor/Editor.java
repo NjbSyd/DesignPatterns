@@ -1,6 +1,7 @@
-package ObserverPattern_EventManagement.editor;
+package GangOfFour.Observer.EventManagement.editor;
 
-import ObserverPattern_EventManagement.publisher.EventManager;
+
+import GangOfFour.Observer.EventManagement.publisher.EventManager;
 
 import java.io.File;
 

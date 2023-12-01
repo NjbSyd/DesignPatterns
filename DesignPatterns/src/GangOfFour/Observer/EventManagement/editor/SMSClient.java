@@ -1,8 +1,6 @@
-package ObserverPattern_EventManagement.editor;
+package GangOfFour.Observer.EventManagement.editor;
 
-import ObserverPattern_EventManagement.publisher.EventManager;
-
-import java.io.File;
+import GangOfFour.Observer.EventManagement.publisher.EventManager;
 
 public class SMSClient {
     public EventManager events;
