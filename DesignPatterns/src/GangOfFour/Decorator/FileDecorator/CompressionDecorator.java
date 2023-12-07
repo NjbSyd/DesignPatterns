@@ -13,7 +13,6 @@ public class CompressionDecorator extends DataSourceDecorator {
 
     @Override
     public void writeData(String data){
-        // Compress the data before writing it to the underlying DataSource.
         String compressedData = compress(data);
         super.writeData(compressedData);
     }
