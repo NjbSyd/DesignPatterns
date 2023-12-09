@@ -1,4 +1,4 @@
-package ObserverPattern;
+package GangOfFour.Observer.NumberFormat;
 
 public interface Subject {
     int getState();

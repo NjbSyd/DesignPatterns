@@ -1,4 +1,4 @@
-package ObserverPattern;
+package GangOfFour.Observer.NumberFormat;
 
 public class HexaObserver extends Observer{
 

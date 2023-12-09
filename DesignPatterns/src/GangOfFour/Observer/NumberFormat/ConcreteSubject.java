@@ -1,4 +1,4 @@
-package ObserverPattern;
+package GangOfFour.Observer.NumberFormat;
 
 import java.util.ArrayList;
 import java.util.List;

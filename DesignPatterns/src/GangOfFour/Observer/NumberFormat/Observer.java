@@ -1,4 +1,4 @@
-package ObserverPattern;
+package GangOfFour.Observer.NumberFormat;
 
 public abstract class Observer {
     protected Subject subject;
