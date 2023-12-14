@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class History {
-    private List<Pair> history = new ArrayList<Pair>();
+    private List<Pair> history = new ArrayList<>();
     private int virtualSize = 0;
 
     private class Pair {
